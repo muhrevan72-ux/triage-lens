@@ -1,6 +1,6 @@
 # Status Akun — TriageLens / Codegeist 2026
 
-Diperbarui 19 Nov 2026, 08:39 WIB. Versi sebelumnya file ini (08:23 WIB)
+Diperbarui 19 Nov 2026, ~09:15 WIB. Versi sebelumnya file ini (08:39 WIB)
 sudah kedaluwarsa — jangan pakai versi lama itu.
 
 ## Status saat ini (terverifikasi)
@@ -14,26 +14,33 @@ sudah kedaluwarsa — jangan pakai versi lama itu.
   email muhrevan72@gmail.com. Tanpa paket berbayar, tanpa kartu kredit.
 - **Situs developer: BERHASIL DIBUAT.** https://triage-lens-dev.atlassian.net
   (Cloud Developer Bundle gratis, Jira + Confluence, 19 Nov 2026).
-  Belum ada aplikasi Forge yang di-deploy di sana.
+- **Developer Space: TriageLens** — dibuat 19 Nov 2026, kyuuu admin.
+- **Forge: TERDAFTAR, TER-DEPLOY, TERINSTALL.** App `triage-lens`,
+  app id `ari:cloud:ecosystem::app/43d20348-8a1e-4987-857d-1f68d3ef4243`,
+  deploy development versi 2.0.0 berhasil, install di Jira
+  triage-lens-dev.atlassian.net status COMPLETED
+  (installation id `d5638939-14dd-434a-a809-937aa9dfcf1d`).
+  `forge lint`: 0 error, 1 warning (properti `name` deprecated).
+  Detail cara deploy di `docs/deploy.md`.
 - **Repo TriageLens:** belum dibuat di GitHub. Kode lokal sudah di-commit
   di `~/workspace/triage-lens/` (commit pertama 19 Nov 2026).
   Repo yang direncanakan: `muhrevan72-ux/triage-lens`.
 
-## Langkah berikutnya (menunggu API token Atlassian)
+## Langkah berikutnya
 
-1. Buat API token Atlassian di https://id.atlassian.com/manage-profile/security/api-tokens
-   (nama: "Forge CLI"). Token hanya tampil sekali — salin dan simpan aman.
-2. `forge login`, `forge register` (ganti app id placeholder di `manifest.yml`),
-   `forge deploy`, `forge install --site triage-lens-dev.atlassian.net --product jira`.
-   Lihat detail di `docs/deploy.md`.
-3. Uji panel di Jira asli, rekam video demo < 5 menit, daftar & submit di
+1. Uji panel TriageLens di Jira asli (buat issue contoh, buka Apps >
+   TriageLens, periksa skor/checklist), tangkap layar untuk video.
+2. Buat repo GitHub `muhrevan72-ux/triage-lens` dan push commit lokal.
+3. Rekam video demo < 5 menit, daftar & submit di
    https://codegeist2026.devpost.com sebelum **Rabu, 23 Des 2026, 03:00 WIB**.
 
 ## Status TriageLens
 
 - `npm test` **4/4 lolos**, `npm run demo` — payment crash **75/100 Urgent**,
   typo **20/100 Low**, login tanpa deskripsi **40/100 Medium**.
-- Belum pernah jalan di Jira asli; app id di `manifest.yml` masih placeholder.
+- Sudah terinstall di Jira asli (triage-lens-dev.atlassian.net, status
+  COMPLETED, 19 Nov 2026) — tinggal diuji panelnya di issue sungguhan.
+- App id di `manifest.yml` sudah id asli, bukan placeholder.
 - Hadiah Codegeist (tidak dijamin): total $120.000, 33 tempat berbayar;
   kategori Apps for Software Teams juara 1 $15.000, juara 2 $8.000,
   juara 3 $5.000. Hanya pemenang yang dibayar.
