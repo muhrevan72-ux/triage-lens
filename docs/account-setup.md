@@ -39,7 +39,10 @@ sudah kedaluwarsa — jangan pakai versi lama itu.
 - `npm test` **4/4 lolos**, `npm run demo` — payment crash **75/100 Urgent**,
   typo **20/100 Low**, login tanpa deskripsi **40/100 Medium**.
 - Sudah terinstall di Jira asli (triage-lens-dev.atlassian.net, status
-  COMPLETED, 19 Nov 2026) — tinggal diuji panelnya di issue sungguhan.
+  COMPLETED, 19 Nov 2026) dan **sudah diuji panelnya di issue sungguhan**:
+  proyek Triage Test (TT), TT-1 "Payment failed, production down" →
+  75/100 Urgent, saran Highest; TT-2 "Fix typo on help page" →
+  10/100 Low, saran Low. Panel memuat tanpa error di kedua issue.
 - App id di `manifest.yml` sudah id asli, bukan placeholder.
 - Hadiah Codegeist (tidak dijamin): total $120.000, 33 tempat berbayar;
   kategori Apps for Software Teams juara 1 $15.000, juara 2 $8.000,
