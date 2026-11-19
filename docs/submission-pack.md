@@ -111,7 +111,7 @@ assignee dan due date).
 - [x] `forge deploy` + `forge install` di situs developer, uji di Jira asli (TT-1 75 Urgent, TT-2 10 Low)
 - [x] `forge lint` — 0 error, 1 warning
 - [x] Repo GitHub https://github.com/muhrevan72-ux/triage-lens dibuat (publik, kosong)
-- [ ] Push kode lokal ke repo GitHub — **terblokir: SSH diblokir, butuh token GitHub via HTTPS**
+- [x] Push kode lokal ke repo GitHub — **selesai 19 Nov 2026, 16:00 WIB**: token classic `repo` (sekali pakai, tidak disimpan), 8 commit di branch main, HEAD 5565500 + perbaikan README, terverifikasi langsung di github.com (publik, 7→8 commit)
 - [x] Video demo publik YouTube < 5 menit — https://youtu.be/NRd57uLSxik (diunggah kyuuu 19 Nov 2026, judul "TriageLens — Jira Issue Triage in Seconds (Codegeist 2026 Demo)", publik, terverifikasi bisa dibuka)
 - [ ] Daftar di Devpost + submit (link install, deskripsi, video) sebelum 23 Des 2026, 03:00 WIB
 

@@ -2,7 +2,7 @@
 
 Aplikasi Forge untuk **Atlassian Codegeist 2026**, kategori **Apps for Software Teams**.
 
-Akun GitHub: **muhrevan72-ux** (berhasil masuk 19 Nov 2026). Repo yang direncanakan: `muhrevan72-ux/triage-lens` — belum dibuat.
+Akun GitHub: **muhrevan72-ux**. Repo: https://github.com/muhrevan72-ux/triage-lens (publik, sudah di-push 19 Nov 2026).
 
 Buka sebuah issue Jira, panel TriageLens langsung menunjukkan:
 - skor triage 0–100 dan level (Urgent / High / Medium / Low),
@@ -18,12 +18,12 @@ lokal tanpa akun dan tanpa biaya.
 Sudah selesai, diuji lokal:
 - ✅ `npm test` — 4 test logika triage
 - ✅ `npm run demo` — 3 contoh issue, output skor/checklist/alasan
-- ✅ `forge lint` — lihat hasil di bawah (dicatat jujur di laporan)
-- ⏳ Belum: deploy & install ke situs Jira (butuh akun Atlassian + Devpost kyuuu)
-- ⏳ Belum: video demo YouTube < 5 menit
+- ✅ `forge lint` — 0 error, 1 warning
+- ✅ Deploy & install ke situs Jira developer (triage-lens-dev.atlassian.net), diuji di Jira asli: TT-1 75/100 Urgent, TT-2 10/100 Low
+- ✅ Video demo publik di YouTube: https://youtu.be/NRd57uLSxik (65 detik)
 - ⏳ Belum: submission di Devpost
 
-Tidak ada akun yang dibuat, tidak ada yang didaftarkan / dikirim.
+Akun GitHub dan Atlassian sudah dibuat dan dipakai; yang tersisa hanya submission di Devpost.
 
 ## Cara kerja
 
@@ -45,18 +45,11 @@ Catatan: `npm install` di lingkungan ini memakai `--ignore-scripts`
 karena Forge CLI gagal build native `keytar` di Node 24. Itu tidak
 memengaruhi kode aplikasi.
 
-## Langkah berikutnya (butuh persetujuan kyuuu)
+## Langkah berikutnya
 
-1. Buat akun GitHub (gratis) — untuk menyimpan repo ini.
-2. Buat akun Atlassian + situs developer gratis, lalu:
-   ```bash
-   npm install -g @forge/cli
-   forge login
-   forge register   # ganti app id placeholder di manifest.yml
-   forge deploy
-   forge install --site <situs>.atlassian.net --product jira
-   ```
-3. Rekam video demo publik di YouTube, di bawah 5 menit.
+1. ~~Buat akun GitHub~~ — selesai, repo publik di atas.
+2. ~~Buat akun Atlassian + situs developer, deploy & install~~ — selesai, app ter-deploy dan terinstall, diuji di Jira asli.
+3. ~~Rekam video demo publik di YouTube~~ — selesai: https://youtu.be/NRd57uLSxik
 4. Daftar & submit di https://codegeist2026.devpost.com — deadline
    **Selasa, 22 Desember 2026, 12:00 PST = Rabu, 23 Desember 2026, 03:00 WIB**.
 
