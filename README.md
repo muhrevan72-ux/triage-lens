@@ -2,6 +2,8 @@
 
 Aplikasi Forge untuk **Atlassian Codegeist 2026**, kategori **Apps for Software Teams**.
 
+Akun GitHub: **muhrevan72-ux** (berhasil masuk 19 Nov 2026). Repo yang direncanakan: `muhrevan72-ux/triage-lens` — belum dibuat.
+
 Buka sebuah issue Jira, panel TriageLens langsung menunjukkan:
 - skor triage 0–100 dan level (Urgent / High / Medium / Low),
 - saran prioritas berdasarkan isi issue, bukan tebakan,
