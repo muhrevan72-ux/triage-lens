@@ -12,16 +12,20 @@ sudah kedaluwarsa — jangan pakai versi lama itu.
   orang lain, dan email ini sudah terhubung ke akun muhrevan72-ux.
 - **Atlassian: BERHASIL DIBUAT BARU DAN MASUK.** Nama **Muhamad Revan**,
   email muhrevan72@gmail.com. Tanpa paket berbayar, tanpa kartu kredit.
-  Belum ada situs Jira/Confluence yang dibuat.
+- **Situs developer: BERHASIL DIBUAT.** https://triage-lens-dev.atlassian.net
+  (Cloud Developer Bundle gratis, Jira + Confluence, 19 Nov 2026).
+  Belum ada aplikasi Forge yang di-deploy di sana.
 - **Repo TriageLens:** belum dibuat di GitHub. Kode lokal sudah di-commit
   di `~/workspace/triage-lens/` (commit pertama 19 Nov 2026).
   Repo yang direncanakan: `muhrevan72-ux/triage-lens`.
 
-## Langkah berikutnya (menunggu keputusan kyuuu)
+## Langkah berikutnya (menunggu API token Atlassian)
 
-1. Buat situs developer Jira Cloud gratis, mis. `triage-lens-dev.atlassian.net`.
+1. Buat API token Atlassian di https://id.atlassian.com/manage-profile/security/api-tokens
+   (nama: "Forge CLI"). Token hanya tampil sekali — salin dan simpan aman.
 2. `forge login`, `forge register` (ganti app id placeholder di `manifest.yml`),
-   `forge deploy`, `forge install --site <situs>.atlassian.net --product jira`.
+   `forge deploy`, `forge install --site triage-lens-dev.atlassian.net --product jira`.
+   Lihat detail di `docs/deploy.md`.
 3. Uji panel di Jira asli, rekam video demo < 5 menit, daftar & submit di
    https://codegeist2026.devpost.com sebelum **Rabu, 23 Des 2026, 03:00 WIB**.
 
