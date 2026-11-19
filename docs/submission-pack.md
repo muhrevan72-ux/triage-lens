@@ -1,6 +1,12 @@
 # Paket Submission — TriageLens untuk Codegeist 2026
 
-Disusun 19 Nov 2026. Belum dikirim ke mana pun, belum ada akun yang dibuat.
+Disusun 19 Nov 2026, diperbarui 19 Nov 2026. Belum dikirim ke Devpost.
+Akun GitHub muhrevan72-ux dan Atlassian Muhamad Revan sudah ada, situs
+developer https://triage-lens-dev.atlassian.net sudah jadi, app sudah
+ter-deploy, ter-install, dan teruji di Jira asli (TT-1 75 Urgent, TT-2 10 Low).
+Repo GitHub https://github.com/muhrevan72-ux/triage-lens sudah dibuat tapi
+masih kosong — kode lokal belum di-push (butuh token GitHub via HTTPS,
+karena SSH dari mesin ini diblokir).
 Semua teks Devpost di bawah ini adalah draf — kyuuu yang memutuskan dan mengirim.
 
 ## 1. Ringkas
@@ -65,22 +71,32 @@ Requirements: Jira Cloud. The app only needs read:jira-work (read-only).
 No configuration, no API key, no external service.
 ```
 
-Catatan jujur: langkah ini **belum bisa diuji end-to-end** tanpa akun
-Atlassian kyuuu. Installation link baru ada setelah `forge register`,
-`forge deploy`, dan `forge install` dengan akun kyuuu.
+Catatan: app sudah terdaftar (`forge register`, app id
+`ari:cloud:ecosystem::app/43d20348-8a1e-4987-857d-1f68d3ef4243`),
+ter-deploy (v2.0.0), dan ter-install di
+https://triage-lens-dev.atlassian.net (status COMPLETED).
+Installation link untuk juri tetap perlu diambil dari Devpost/Forge
+saat submit.
 
 ## 5. Naskah video demo (target 2 menit 30 detik, batas 5 menit)
 
 Juri tidak wajib menonton lebih dari 3 menit, jadi semua poin penting
 harus ada di 3 menit pertama. Rekam layar Jira + suara, tanpa musik.
+**Suara sebaiknya bahasa Inggris** — juri Codegeist internasional dan
+submission Devpost berbahasa Inggris. Kalau tidak nyaman, bahasa
+Indonesia masih bisa, tapi bahasa Inggris memberi peluang lebih baik.
+Bacakan naskah Inggris di bawah ini pelan-pelan; angka skornya sudah
+disesuaikan dengan hasil uji di Jira asli 19 Nov 2026 (TT-1 75 Urgent,
+TT-2 10 Low — bukan 20 seperti di demo lokal, karena TT-2 tidak punya
+assignee dan due date).
 
-| Waktu | Yang ditampilkan | Yang dikatakan |
+| Waktu | Yang ditampilkan | Yang dikatakan (bahasa Inggris) |
 |---|---|---|
-| 0:00–0:20 | Jira issue "Payment failed, production down", tanpa assignee | "Ini issue yang masuk tanpa assignee. Tim tidak tahu ini darurat atau bukan." |
-| 0:20–1:00 | Buka panel TriageLens, skor 75/100 Urgent | "TriageLens memberi skor 75, Urgent, saran prioritas Highest, dan alasannya terlihat: crash, payment failed, production." |
-| 1:00–1:40 | Checklist + langkah berikutnya | "Checklist menunjukkan assignee dan due date masih kosong, dan langkah berikutnya jelas: tugaskan hari ini." |
-| 1:40–2:10 | Issue kedua: typo, skor 20/100 Low | "Issue biasa tidak dibesar-besarkan: typo lengkap dapat skor 20, Low." |
-| 2:10–2:30 | Penutup: Forge + UI Kit, read-only | "Dibangun di Forge dengan UI Kit, hanya baca Jira, tanpa API key eksternal." |
+| 0:00–0:20 | Jira issue "Payment failed, production down", tanpa assignee | "This is an issue that came in with no assignee. The team doesn't know if it's urgent or not." |
+| 0:20–1:00 | Buka panel TriageLens, skor 75/100 Urgent | "TriageLens gives it a score of 75, Urgent, suggests Highest priority, and shows why: crash, payment failed, production." |
+| 1:00–1:40 | Checklist + langkah berikutnya | "The checklist shows the assignee and due date are still empty, and the next step is clear: assign someone today." |
+| 1:40–2:10 | Issue kedua: typo, skor 10/100 Low | "An ordinary issue is not blown up: a complete typo gets a score of 10, Low." |
+| 2:10–2:30 | Penutup: Forge + UI Kit, read-only | "Built on Forge with UI Kit, read-only on Jira, no external API key." |
 
 ## 6. Checklist submission Devpost (status 19 Nov 2026)
 
@@ -89,21 +105,22 @@ harus ada di 3 menit pertama. Rekam layar Jira + suara, tanpa musik.
 - [x] `npm run demo` 3 contoh benar (75 Urgent, 20 Low, 40 Medium)
 - [x] Frontend JSX + resolver lolos bundling esbuild
 - [x] `manifest.yml` valid YAML, modul `jira:issuePanel`, scope `read:jira-work`
-- [ ] Akun GitHub kyuuu — **butuh persetujuan kyuuu, belum dibuat**
-- [ ] Akun Atlassian + situs developer gratis — **butuh persetujuan kyuuu**
-- [ ] `forge login` → `forge register` → ganti app id placeholder di `manifest.yml`
-- [ ] `forge deploy` + `forge install` di situs developer, uji di Jira asli
-- [ ] `forge lint` — **terblokir sampai login** (CLI 15 menolak tanpa login)
-- [ ] Video demo publik YouTube < 5 menit
+- [x] Akun GitHub muhrevan72-ux — sudah masuk
+- [x] Akun Atlassian Muhamad Revan + situs developer gratis
+- [x] `forge register` — app id `ari:cloud:ecosystem::app/43d20348-8a1e-4987-857d-1f68d3ef4243` sudah di `manifest.yml`
+- [x] `forge deploy` + `forge install` di situs developer, uji di Jira asli (TT-1 75 Urgent, TT-2 10 Low)
+- [x] `forge lint` — 0 error, 1 warning
+- [x] Repo GitHub https://github.com/muhrevan72-ux/triage-lens dibuat (publik, kosong)
+- [ ] Push kode lokal ke repo GitHub — **terblokir: SSH diblokir, butuh token GitHub via HTTPS**
+- [ ] Video demo publik YouTube < 5 menit — naskah Inggris siap (§5); kyuuu rekam suara saja, Muse gabungkan dengan tangkapan layar di `docs/demo-shots/`
 - [ ] Daftar di Devpost + submit (link install, deskripsi, video) sebelum 23 Des 2026, 03:00 WIB
 
 ## 7. Batasan yang dilaporkan jujur
 
-1. Belum pernah dijalankan di Jira asli. Semua yang teruji adalah logika
-   triage (`src/triage.js`), bundling kode, dan struktur manifest.
-2. App id di `manifest.yml` masih placeholder
-   (`ari:cloud:ecosystem::app/00000000-...`). Harus diganti lewat
-   `forge register` setelah login.
+1. Sudah dijalankan di Jira asli 19 Nov 2026 (TT-1 75 Urgent, TT-2 10 Low,
+   panel muncul tanpa error). Yang belum: push kode ke GitHub dan submit Devpost.
+2. App id di `manifest.yml` sudah asli
+   (`ari:cloud:ecosystem::app/43d20348-8a1e-4987-857d-1f68d3ef4243`).
 3. `forge create` interaktif gagal di lingkungan ini (butuh TTY + login);
    scaffold dibuat manual mengikuti struktur template resmi Atlassian
    (Forge Quest / Build and deploy a Forge app).
